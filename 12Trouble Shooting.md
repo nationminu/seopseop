@@ -111,10 +111,13 @@ Gc log – Hpjmeter, IBM ga
 ##Labs12_03 Analyzer Tools
 
 Thread Dump를 TDA 를 통해 분석
-```
-java -jar tda.jar
-```
+
+
 ![Lab11](TDA1.png)
+
+
+![Lab11](TDA2.png)
+
 
 Heap Dump 를  Eclipse Memory Analyzer 를 이용한 분석
 
