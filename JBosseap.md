@@ -45,4 +45,4 @@ JBossEAP6 는 JBoss console 이나 CLI 를 통하여 JBoss 의 상태를 모니�
 }
 
 ### CONSOLE
-![Labs11_01](/쓰레드.png)
+![Alt dfa](/쓰레드.png)
