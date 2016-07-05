@@ -92,10 +92,12 @@ root     18703 18552  0 Jul06 ?        00:05:59 /usr/lib/jvm/java-1.7.0/bin/java
 -jar /JBOSS/jboss-eap-6.4/jboss-modules.jar -mp /JBOSS/jboss-eap-6.4/modules:/JBOSS/jboss-eap-6.4/modules.ext -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone 
 -Djboss.home.dir=/JBOSS/jboss-eap-6.4 -Djboss.server.base.dir=/JBOSS/domains/sws1132 -DSERVER=sws1132 -P=/JBOSS/domains/sws1132/bin/env.properties -c standalone-ha.xml
 ```
+```
 [root@localhost bin]# jmap -dump:format=b,file=heap.hprof 18703
 
 Dumping heap to /JBOSS/domains/sws1132/bin/heap.hprof ...
 Heap dump file created
+```
 
 ##Analyzer Tools
 장애 시 획득한 덤프들은 Analyzer Tools 을 이용하여 분석 한다.
@@ -107,8 +109,10 @@ Gc log – Hpjmeter, IBM ga
 ##Labs12_03 Analyzer Tools
 
 Thread Dump를 TDA 를 통해 분석
-
+```
 java -jar tda.jar
+```
+![Lab11](TDA.png)
 
 
 
