@@ -112,7 +112,7 @@ Thread Dump를 TDA 를 통해 분석
 ```
 java -jar tda.jar
 ```
-![Lab11](TDA.png)
+![Lab11](TDA1.png)
 
 
 
