@@ -103,7 +103,9 @@ Heap dump file created
 장애 시 획득한 덤프들은 Analyzer Tools 을 이용하여 분석
 
 Thread Dump – TDA, IBM JCA등등
+
 Heap Dump – IBM ha, Eclipse Memory Analyzer 등등
+
 Gc log – Hpjmeter, IBM ga
 
 ##Labs12_03 Analyzer Tools
