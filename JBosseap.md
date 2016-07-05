@@ -77,3 +77,21 @@ JBossEAP6 는 JBoss console 이나 CLI 를 통하여 JBoss 의 상태를 모니�
 ```
 ### CONSOLE
 ![Lab11](데이터 소스.png)
+
+
+##Labs11_03 Memory Monitoring
+### CLI
+```
+[standalone@192.168.102.88:9999 /] /core-service=platform-mbean/type=memory:read-attribute(name=heap-memory-usage)
+{
+    "outcome" => "success",
+    "result" => {
+        "init" => 536870912L,                   #초기 할당 메모리양
+        “used” => 179306496L,                   #현재 사용하고 있는 메모리양
+        “committed” => 536870912L,              #현재 사용 가능한 메모리양
+        ＂max＂ => 2147483648L                  #JVM이 할당 가능한 메모리의 최댓값
+    }
+}
+```
+### CONSOLE
+![Lab11](jvm.png)
