@@ -104,3 +104,13 @@ Thread Dump – TDA, IBM JCA등등
 Heap Dump – IBM ha, Eclipse Memory Analyzer 등등
 Gc log – Hpjmeter, IBM ga
 
+##Labs12_03 Analyzer Tools
+
+Thread Dump를 TDA 를 통해 분석
+
+java -jar tda.jar
+
+
+
+
+
