@@ -76,4 +76,4 @@ JBossEAP6 는 JBoss console 이나 CLI 를 통하여 JBoss 의 상태를 모니�
 }
 ```
 ### CONSOLE
-![Lab11](데이터소스.png)
+![Lab11](데이터 소스.png)
