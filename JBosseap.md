@@ -45,6 +45,29 @@ Labs12_01 Thread Monitoring
 
 ```
 
+```
+[standalone@192.168.102.88:9999 /] /subsystem=datasources/data-source=MysqlDS/statistics=pool:read-resource(include-runtime=true)
+{
+    "outcome" => "success",
+    "result" => {
+        "ActiveCount" => "20",                  #현재 사용 중인 연결 개수
+       ＂AvailableCount＂ => ＂20＂,         #사용 가능한 연결 개수
+        "AverageBlockingTime" => "0",       #연결을 위해서 대기했던 평균 시간(ms)
+        "AverageCreationTime" => "7",       #데이터베이스와 연결에 걸린 평균 시간(ms)
+        ＂CreatedCount＂ => ＂20＂,          #지금까지 만들어진 연결 개수
+        "DestroyedCount" => "0",               #지금까지 소멸된 연결 개수
+        "InUseCount" => "0",                     #현재 사용중인 연결 개수
+        "MaxCreationTime" => "20",           #데이터베이스 연결에 걸린 최대 시간(ms) 
+        "MaxUsedCount" => "1",                #지금까지 동시에 사용된 최대 연결 수 
+        "MaxWaitCount" => "0",                 #연결을 얻기 위해 대기한 스레드의 최댓값 
+        ＂MaxWaitTime＂ => ＂0＂,             #연결을 얻기 위해 대기한 대기 시간의 최댓값
+        "TimedOut" => "0",                        #접속을 얻기 위해 기다리다 타임아웃된 스레드의 개수  
+        "TotalBlockingTime" => "0",             #연결을 위해 블록킹했던 시간의 총합
+        "TotalCreationTime" => "147",          #연결을 생성하기 위해 걸린 시간의 총합
+        "statistics-enabled" => true
+    }
+}
+```
 
 
 
