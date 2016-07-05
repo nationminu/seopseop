@@ -65,7 +65,7 @@ Full thread dump OpenJDK 64-Bit Server VM (24.65-b04 mixed mode):
 ##Heap Dump란?
 java에서 사용하는 object들을 저장하는 공간으로 현재 Heap에 점유 되고 있는 객체들을 확인 하기 위해 생성
 
-###heap Dump 획득 절차
+###Heap Dump 획득 절차
 1. APP 지연 확인
 2. GC log 나 모니터링 툴을 이용하여 Full GC 발생 확인
 3. Java 에서 제공 하는 jmap 을 이용하여 생성
