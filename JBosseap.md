@@ -61,5 +61,5 @@ Labs12_01 Thread Monitoring
 
 
 ```
-/core-service=platform-mbean/type=memory:read-attribute(name=heap-memory-usage)
+
 ```
