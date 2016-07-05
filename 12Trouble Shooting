@@ -21,9 +21,9 @@ Thread Dump 획득 절차
 
 ##Labs12_01 Thread Dump 생성
 
-```
 jboss의 PID 확인
-[root@sws1132 bin]# ps -ef | grep jboss
+```
+[root@localhost bin]# ps -ef | grep jboss
 
 root     18703 18552  0 Jul06 ?        00:05:59 /usr/lib/jvm/java-1.7.0/bin/java -D[Standalone] -XX:+UseCompressedOops 
 -server -Xms512m -Xmx2048m -Xss256k -XX:+UseG1GC -XX:MaxGCPauseMillis=1000 -verbose:gc -XX:+PrintGCTimeStamps 
@@ -37,8 +37,32 @@ root     18703 18552  0 Jul06 ?        00:05:59 /usr/lib/jvm/java-1.7.0/bin/java
 -deployment=false -Dorg.jboss.boot.log.file=/JBOSS/domains/sws1132/log/server.log -Dlogging.configuration=file:/JBOSS/domains/sws1132/configuration/logging.properties 
 -jar /JBOSS/jboss-eap-6.4/jboss-modules.jar -mp /JBOSS/jboss-eap-6.4/modules:/JBOSS/jboss-eap-6.4/modules.ext -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone 
 -Djboss.home.dir=/JBOSS/jboss-eap-6.4 -Djboss.server.base.dir=/JBOSS/domains/sws1132 -DSERVER=sws1132 -P=/JBOSS/domains/sws1132/bin/env.properties -c standalone-ha.xml
+```
+
+5~10초 간격으로 3번 수행
+```
+[root@localhost bin]# kill -3 18703
+[root@localhost bin]# kill -3 18703
+[root@localhost bin]# kill -3 18703
+```
+
+획득한 Thread Dump는 JBoss 의 nohup log에서 확인 할 수 있다.
+```
+Full thread dump OpenJDK 64-Bit Server VM (24.65-b04 mixed mode):
+"http-/192.168.102.88:8080-1" daemon prio=10 tid=0x00007ff384077000 nid=0x14f in Object.wait() [0x00007ff3a0da3000]
+   java.lang.Thread.State: WAITING (on object monitor)
+        at java.lang.Object.wait(Native Method)
+        - waiting on <0x000000078b300068> (a org.apache.tomcat.util.net.JIoEndpoint$Worker)
+        at java.lang.Object.wait(Object.java:503)
+        at org.apache.tomcat.util.net.JIoEndpoint$Worker.await(JIoEndpoint.java:881)
+        - locked <0x000000078b300068> (a org.apache.tomcat.util.net.JIoEndpoint$Worker)
+        at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:907)
+        at java.lang.Thread.run(Thread.java:745)
 
 ```
+
+
+
 ### CONSOLE
 ![Lab11](쓰레드.png)
 
