@@ -100,7 +100,7 @@ Heap dump file created
 ```
 
 ##Analyzer Tools
-장애 시 획득한 덤프들은 Analyzer Tools 을 이용하여 분석 한다.
+장애 시 획득한 덤프들은 Analyzer Tools 을 이용하여 분석
 
 Thread Dump – TDA, IBM JCA등등
 Heap Dump – IBM ha, Eclipse Memory Analyzer 등등
@@ -114,6 +114,13 @@ java -jar tda.jar
 ```
 ![Lab11](TDA1.png)
 
+Heap Dump 를  Eclipse Memory Analyzer 를 이용한 분석
+
+![Lab11](MAT1.png)
+
+
+
+![Lab11](MAT2.png)
 
 
 
