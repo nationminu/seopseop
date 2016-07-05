@@ -9,7 +9,53 @@ JBossEAP6 는 JBoss console 이나 CLI 를 통하여 JBoss 의 상태를 모니�
  - Memory 
 ```
 /subsystem=web/connector=http:read-resource(recursive=true, include-runtime=true)
+{
+    "outcome" => "success",
+    "result" => {
+        "bytesReceived" => "0",
+        "bytesSent" => "0",
+        "enable-lookups" => false,
+        "enabled" => true,
+        "errorCount" => "0",
+        "executor" => undefined,
+        "max-connections" => undefined,
+        "max-post-size" => 2097152,
+        "max-save-post-size" => 4096,
+        "maxTime" => "0",
+        "name" => "http",
+        "processingTime" => "0",
+        "protocol" => "HTTP/1.1",
+        "proxy-binding" => undefined,
+        "proxy-name" => undefined,
+        "proxy-port" => undefined,
+        "redirect-binding" => undefined,
+        "redirect-port" => 443,
+        "requestCount" => "0",
+        "scheme" => "http",
+        "secure" => false,
+        "socket-binding" => "http",
+        "virtual-server" => undefined,
+        "configuration" => undefined
+    }
+}
+
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 /core-service=platform-mbean/type=memory:read-attribute(name=heap-memory-usage)
 ```
