@@ -1,4 +1,4 @@
-# 11. Monitoring 
+[# 11. Monitoring 
 
 
 보통 WAS의 모니터링 경우 APM Tool 을 이용하거나 자체적으로 제공하는 기능을 통하여 모니터링.  
@@ -45,4 +45,4 @@ JBossEAP6 는 JBoss console 이나 CLI 를 통하여 JBoss 의 상태를 모니�
 }
 
 ### CONSOLE
-!(쓰레드.png)
+![Labs11_01](/쓰레드.png)
