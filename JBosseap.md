@@ -9,7 +9,7 @@ JBossEAP6 는 JBoss console 이나 CLI 를 통하여 JBoss 의 상태를 모니�
  - Memory 
  - 
 
-Labs11_01 Thread Monitoring
+#Labs11_01 Thread Monitoring
 
 ```
 /subsystem=web/connector=ajp:read-resource(recursive=true, include-runtime=true)
